@@ -1,0 +1,93 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY CENTER ===== */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  text-align: center;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.flow {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.b2b {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* ===== CARD ===== */
+.card-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== TEXT ===== */
+.card-box h2 {
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUT ===== */
+.card-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* ===== BUTTON ===== */
+.card-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #7c3aed, #6366f1);
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== BACK ===== */
+.back-btn {
+  display: inline-block;
+  margin-top: 12px;
+  color: #7c3aed;
+  text-decoration: none;
+}

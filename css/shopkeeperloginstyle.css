@@ -1,0 +1,172 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body.center-page {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= MAIN ================= */
+.login-container {
+  text-align: center;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px; /* 🔥 thoda spacing increase */
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.flow {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.b2b {
+  font-size: 12px;
+  color: #6366f1;
+}
+
+/* ================= CARD ================= */
+.card-box {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12); /* 🔥 smoother shadow */
+  width: 300px;
+  transition: 0.3s;
+}
+
+.card-box:hover {
+  transform: translateY(-3px); /* 🔥 subtle lift effect */
+}
+
+/* ================= TITLE ================= */
+.card-box h2 {
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ================= INPUT ================= */
+input {
+  width: 100%;
+  padding: 11px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 6px rgba(99,102,241,0.3);
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(99,102,241,0.4);
+}
+
+/* ================= BACK ================= */
+.back-btn {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #6366f1;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.error-msg {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/* ================= LOADING STATE ================= */
+button.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ================= PLACEHOLDER STYLE ================= */
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99,102,241,0.4);
+}
+
+/* ================= SHOP NAME DISPLAY ================= */
+#shopDisplay {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4f46e5;
+  background: rgba(99,102,241,0.1);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+/* ================= ERROR MESSAGE IMPROVED ================= */
+.error-msg {
+  color: #ef4444;
+  font-size: 12px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* ================= BUTTON LOADING TEXT ================= */
+button.loading::after {
+  content: "...";
+}

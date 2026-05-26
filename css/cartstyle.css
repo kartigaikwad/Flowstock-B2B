@@ -1,0 +1,258 @@
+/* ===== BODY ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f3ff;
+  padding: 20px;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* ===== HEADING ===== */
+h2 {
+  text-align: center;
+  margin: 10px 0 25px;
+  color: #5b21b6;
+}
+
+/* ===== CONTAINER ===== */
+#cart-items {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ===== CARD ===== */
+.card.row {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.card.row:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== LEFT INFO ===== */
+.left {
+  flex: 1;
+  min-width: 180px;
+}
+
+.left h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.left p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== PROGRESS BAR (Reusable) ===== */
+.progress {
+  margin-top: 8px;
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* ===== PROGRESS LEVELS ===== */
+.bar.pending { width: 25%; background: #f59e0b; }
+.bar.approved { width: 50%; background: #7c3aed; }
+.bar.shipped { width: 75%; background: #e33403; }
+.bar.delivered { width: 100%; background: #22c55e; }
+
+/* ===== MIDDLE CONTROLS ===== */
+.middle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== +/- BUTTONS ===== */
+.middle button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #ede9fe;
+  color: #5b21b6;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.middle button:hover {
+  background: #7c3aed;
+  color: white;
+}
+
+/* ===== QTY TEXT ===== */
+.middle span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ===== RIGHT ===== */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== REMOVE BUTTON ===== */
+.remove {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px;
+  transition: 0.2s;
+}
+
+.remove:hover {
+  transform: scale(1.2);
+  color: #dc2626;
+}
+
+/* ===== TOTAL ===== */
+#total {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ===== PLACE ORDER BUTTON ===== */
+.primary {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  transform: scale(1.05);
+}
+
+/* ===== SUCCESS POPUP ===== */
+.success-msg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.success-msg.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ===== TICK ===== */
+.tick {
+  font-size: 42px;
+  color: #22c55e;
+  animation: pop 0.4s ease;
+}
+
+/* ===== SUCCESS TEXT ===== */
+.success-text {
+  margin-top: 8px;
+  color: #22c55e;
+  font-weight: 600;
+}
+
+/* ===== MESSAGE TEXT ===== */
+.success-msg p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+/* ===== BUTTON GROUP ===== */
+.success-msg div {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== BUTTON STYLE ===== */
+.success-msg button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ===== TRACK BUTTON ===== */
+.success-msg button:first-child {
+  background: #22c55e;
+  color: white;
+}
+
+.success-msg button:first-child:hover {
+  background: #16a34a;
+}
+
+/* ===== CONTINUE BUTTON ===== */
+.success-msg button:last-child {
+  background: #7c3aed;
+  color: white;
+}
+
+.success-msg button:last-child:hover {
+  background: #5b21b6;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}

@@ -1,0 +1,115 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body.center-page {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.login-container {
+  text-align: center;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.flow {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.b2b {
+  font-size: 12px;
+  color: #10b981;
+}
+
+/* ================= CARD ================= */
+.card-box {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  width: 300px;
+}
+
+/* ================= TITLE ================= */
+.card-box h2 {
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* ================= INPUT ================= */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 5px rgba(16,185,129,0.3);
+}
+
+/* ================= BUTTON ================= */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(16,185,129,0.4);
+}
+
+/* ================= BACK ================= */
+.back-btn {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6366f1;
+  text-decoration: none;
+}

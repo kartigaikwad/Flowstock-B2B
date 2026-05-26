@@ -1,0 +1,97 @@
+/* ===== BODY ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f3ff;
+  padding: 20px;
+}
+
+/* ===== BACK BUTTON ===== */
+.back-btn {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+/* ===== HEADING ===== */
+h2 {
+  text-align: center;
+  margin: 15px 0 25px;
+  color: #5b21b6;
+}
+
+/* ===== CONTAINER ===== */
+#orders {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* ===== EMPTY TEXT ===== */
+.empty {
+  text-align: center;
+  color: #666;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== LEFT ===== */
+.left h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #111;
+}
+
+.left p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== RIGHT ===== */
+.right {
+  display: flex;
+  align-items: center;
+}
+
+/* ===== STATUS ===== */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== COLORS ===== */
+.status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status.approved {
+  background: #fce7f3;   /* light pink */
+  color: #be185d;        /* deep rose */
+}
+.status.shipped {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status.delivered {
+  background: #dcfce7;
+  color: #166534;
+}

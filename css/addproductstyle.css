@@ -1,0 +1,110 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY CENTER ===== */
+body.center-page {
+  height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CARD ===== */
+.card-box {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 18px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.card-box:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== TITLE ===== */
+.card-box h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* ===== INPUT ===== */
+.card-box input {
+  width: 100%;
+  padding: 11px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.card-box input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 6px rgba(99,102,241,0.3);
+}
+
+/* ===== BUTTON ===== */
+.card-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(99,102,241,0.4);
+}
+
+/* ===== BACK BUTTON ===== */
+.card-box button:last-child {
+  background: transparent;
+  color: #6366f1;
+  margin-top: 10px;
+  box-shadow: none;
+}
+
+.card-box button:last-child:hover {
+  text-decoration: underline;
+  transform: none;
+}
+
+/* ===== MESSAGE ===== */
+#msg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #16a34a;
+}
+
+/* ERROR MESSAGE */
+#msg:empty {
+  display: none;
+}
+
+/* ===== PLACEHOLDER ===== */
+input::placeholder {
+  color: #9ca3af;
+}
+
+/* ===== SMALL SCREEN ===== */
+@media(max-width: 400px){
+  .card-box{
+    width: 90%;
+    padding: 25px;
+  }
+}
